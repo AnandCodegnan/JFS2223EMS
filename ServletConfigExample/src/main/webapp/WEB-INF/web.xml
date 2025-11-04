@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  
+  <servlet>
+  	<servlet-name>Samantha</servlet-name>
+  	<servlet-class>com.config.Servlet1</servlet-class>
+  	<init-param>
+  		<param-name>driver</param-name>
+  		<param-value>com.mysql.cj.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:mysql://localhost:3306/test</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Samantha</servlet-name>
+  	<url-pattern>/one</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>Thamanna</servlet-name>
+  	<servlet-class>com.config.Servlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Thamanna</servlet-name>
+  	<url-pattern>/two</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
